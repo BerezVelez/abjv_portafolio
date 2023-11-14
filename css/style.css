@@ -226,15 +226,28 @@ body{
 }
 /*CardsGlass*/
 /*Textos*/
-#rowDos{
+@keyframes marquee{
+    0% {transform: translateY(20);}
+    100% {transform: translateY(-50%);}
+}
+#scroll{
     display: flex;
     align-items: center;
+    height: 5rem;
+    overflow: hidden;
 }
-#rowDos li{
+#scroll .scroll_content{
+    animation: marquee 6s linear infinite;
+}
+#scroll li{
     font-family: 'Swiss-721-Expanded';
-    font-size: 3rem;
+    font-size: 5vh;
     list-style: none;
 }
+.scroll_content .scroll-item{
+    flex-shrink: 0;
+}
+/*Textos*/
 /*INICIO*/
 
 /*AboutMe*/
