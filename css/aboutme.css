@@ -41,6 +41,7 @@ div.marque{
 #imagenBere{
     width: auto;
     height: 100%;
+    position: relative;
 }
 #imagenBere img{
     width: 80%;
@@ -49,20 +50,28 @@ div.marque{
 #imagenBere img:hover{
     filter: drop-shadow(10px 10px 10px rgba(44, 44, 44, 0.705));
 }
-.links{
-    position: relative;
+.botonCtn{
+    position: absolute;
     display: flex;
     justify-content: space-around;
-    width: auto;
-    left: 15%;
-    bottom: 55%;
+    width: 100px;
+    left: 10%;
+    bottom: 19%;
+    padding: 0.5%;
+    border-radius: 8px;
+    background-color: blue;
+    /*background-color: #94AF70;*/
 }
-.links a{
-    position: absolute;
-    display: inline;
-    width: 30px;
+.botonCtn a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Anybody-ExtraExpandedMedium';
+    font-size: 10px;
 }
-
+.botonCtn:hover{
+    transform: scale(110%);
+    box-shadow: 0px 3px 10px #333333;
+}
 /*--------------------------------*/
 #SobreMi{
     padding-top: 1%;
@@ -78,11 +87,13 @@ div.marque{
 }
 #CardSobreMi:hover{
     border-radius: 20px;
-    background-color: rgba(160, 206, 139, 0.3);
+    background-color: rgb(174, 174, 218);
+    /*background-color: rgba(160, 206, 139, 0.3);*/
     box-shadow: 15px 8px 30px 0 rgba(135, 60, 31, 0.37);
     backdrop-filter: blur(50px);
     border: 2px solid rgba(236, 236, 236, 0.459);
 }
+/*---------------------------------*/
 div.col-sm-8.col-ms-8.col-lg-8{
     display: flex;
     align-items: center;
@@ -91,11 +102,13 @@ div.card-body.text-end{
     margin-bottom: 3%;
 }
 h3.card-title{
+    color: blue;
     font-family: 'Anybody-ExpandedMedium';
     font-size:2.5rem;
     display: inline;
 }
 h5.card-title{
+    color: blue;
     font-family: 'Anybody-ExpandedBlack';
     font-size: 1.5rem;
     display: inline;
@@ -134,13 +147,14 @@ h5.card-title{
 }
 #InfoCard:hover{
     border-radius: 20px;
-    background-color: rgba(160, 206, 139, 0.3);
+    background-color: rgb(174, 174, 218);
+    /*background-color: rgba(160, 206, 139, 0.3);*/
     box-shadow: 15px 8px 30px 0 rgba(135, 60, 31, 0.37);
     backdrop-filter: blur(50px);
     border: 2px solid rgba(236, 236, 236, 0.459);
 }
 h6.card-title{
-    font-family: 'Swis721BT-BoldExtended';
+    font-family: 'Anybody-ExpandedMedium';
     font-size: 0.8rem;
     display: inline;
     float: right;
@@ -202,6 +216,7 @@ h6.card-title{
     white-space: nowrap;
 }
 #InfoCard img{
+    width: 20px;
     margin: 1%;
     float: right;
 }
@@ -209,4 +224,474 @@ h6.card-title{
     margin: 1%;
     float: right;
 }
+/*---------------------------------------------------------------------------1024px*/
+@media only screen and (max-width: 1024px) {
+    div.col-sm-8.col-ms-8.col-lg-8{
+        display: flex;
+        align-items: center;
+    }
+    div.card-body.text-end{
+        margin-bottom: 3%;
+    }
+    h3.card-title{
+        font-family: 'Anybody-ExpandedMedium';
+        font-size:2rem;
+        display: inline;
+    }
+    h5.card-title{
+        font-family: 'Anybody-ExpandedBlack';
+        font-size: 1rem;
+        display: inline;
+    }
+    .card-text{
+        font-family: 'Anybody-ExtraExpandedMedium';
+        font-size: 0.6rem;
+        text-size-adjust: 5%;
+        margin-bottom: 0;
+    }
+    .card-text-qoute{
+        font-family: 'Anybody-ExtraExpandedThin';
+        float: right;
+        margin-top: 5%;
+        font-size: 0.4rem;
+    }
+    .codigoQR{
+        display: flex;
+        align-items: center;
+    }
+    .codigoQR img:hover{
+        filter: drop-shadow(5px 5px 5px black);
+        display: flex;
+        align-items: center;
+    }
+    .codigoQR img{
+        width: 80%;
+        margin-left: 8%;
+    }
+    /*--------------------------------*/
+    #InfoCard{
+        border-radius: 20px;
+        background-color: rgba(252, 252, 252, 0.3);
+        box-shadow: 15px 8px 30px 0 rgba(135, 60, 31, 0.37);
+        backdrop-filter: blur(1px);
+        border: 2px solid rgba(236, 236, 236, 0.459);
+    }
+    #InfoCard:hover{
+        border-radius: 20px;
+        background-color: rgba(160, 206, 139, 0.3);
+        box-shadow: 15px 8px 30px 0 rgba(135, 60, 31, 0.37);
+        backdrop-filter: blur(50px);
+        border: 2px solid rgba(236, 236, 236, 0.459);
+    }
+    h6.card-title{
+        font-family: 'Anybody-ExpandedMedium';
+        font-size: 0.6rem;
+        display: inline;
+        float: right;
+    }
+    @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    
+    #InfoCard p.card-text{
+        font-family: 'Swis721BT-LightExtended';
+        font-size: 0.5rem;
+        text-align: end;
+    
+        border-right: .1rem solid rgba(78, 143, 41, 0.671);
+    }
+    #InfoCard p.card-text.a{
+        animation: blink 0.5s steps(1) infinite, typing 2.5s steps(30) 1s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.b{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 3.5s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.c{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 5.5s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.d{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 8s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.e{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 10s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.f{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 12s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.g{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 14s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.h{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 16s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.i{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 18.5s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.j{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 20.5s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p{
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    #InfoCard img{
+        width: 15px;
+        margin: 1%;
+        float: right;
+    }
+    #InfoCard img:hover{
+        margin: 1%;
+        float: right;
+    }
+}
+
+/*---------------------------------------------------------------------------768px*/
+@media only screen and (max-width: 768px) {
+    .botonCtn{
+        left: 0%;
+    }
+    #imagenBere img{
+        width: 100%;
+        height: auto;
+    }
+    #imagenBere img:hover{
+        filter: drop-shadow(10px 10px 10px rgba(44, 44, 44, 0.705));
+    }
+    #SobreMi{
+        padding-top: 1%;
+        width: 35%;
+        margin-top: 4%;
+    }
+    #CardSobreMi{
+        border-radius: 20px;
+        background-color: rgba(236, 236, 236, 0.3);
+        box-shadow: 15px 8px 30px 0 rgba(135, 60, 31, 0.37);
+        backdrop-filter: blur(1px);
+        border: 2px solid rgba(236, 236, 236, 0.459);
+    }
+    #CardSobreMi:hover{
+        border-radius: 20px;
+        background-color: rgba(160, 206, 139, 0.3);
+        box-shadow: 15px 8px 30px 0 rgba(135, 60, 31, 0.37);
+        backdrop-filter: blur(50px);
+        border: 2px solid rgba(236, 236, 236, 0.459);
+    }
+    /*-----------------------------------------*/
+    div.col-sm-8.col-ms-8.col-lg-8{
+        display: flex;
+        align-items: center;
+    }
+    div.card-body.text-end{
+        margin-bottom: 3%;
+    }
+    h3.card-title{
+        font-family: 'Anybody-ExpandedMedium';
+        font-size:200%;
+        display: inline;
+    }
+    h5.card-title{
+        font-family: 'Anybody-ExpandedBlack';
+        font-size: 80%;
+        display: inline;
+    }
+    .card-text{
+        font-family: 'Anybody-ExtraExpandedMedium';
+        font-size: 40%;
+        text-size-adjust: 5%;
+        margin-bottom: 0;
+    }
+    .card-text-qoute{
+        font-family: 'Anybody-ExtraExpandedThin';
+        float: right;
+        margin-top: 5%;
+        font-size: 0.4rem;
+    }
+    .codigoQR{
+        display: flex;
+        align-items: center;
+    }
+    .codigoQR img:hover{
+        filter: drop-shadow(5px 5px 5px black);
+        display: flex;
+        align-items: center;
+    }
+    .codigoQR img{
+        width: 90%;
+        margin-left: 8%;
+    }
+    /*--------------------------------*/
+    #InfoCard{
+        width: 100%;
+        border-radius: 20px;
+        background-color: rgba(252, 252, 252, 0.3);
+        box-shadow: 15px 8px 30px 0 rgba(135, 60, 31, 0.37);
+        backdrop-filter: blur(1px);
+        border: 2px solid rgba(236, 236, 236, 0.459);
+    }
+    #InfoCard:hover{
+        border-radius: 20px;
+        background-color: rgba(160, 206, 139, 0.3);
+        box-shadow: 15px 8px 30px 0 rgba(135, 60, 31, 0.37);
+        backdrop-filter: blur(50px);
+        border: 2px solid rgba(236, 236, 236, 0.459);
+    }
+    h6.card-title{
+        font-family: 'Anybody-ExpandedMedium';
+        font-size: 0.5rem;
+        display: inline;
+        float: right;
+    }
+    @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    
+    #InfoCard p.card-text{
+        font-family: 'Swis721BT-LightExtended';
+        font-size: 40%;
+        text-align: end;
+    
+        border-right: .1rem solid rgba(78, 143, 41, 0.671);
+    }
+    #InfoCard p.card-text.a{
+        animation: blink 0.5s steps(1) infinite, typing 2.5s steps(30) 1s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.b{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 3.5s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.c{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 5.5s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.d{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 8s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.e{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 10s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.f{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 12s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.g{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 14s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.h{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 16s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.i{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 18.5s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.j{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 20.5s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p{
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    #InfoCard img{
+        width: 12px;
+        margin: 1%;
+        float: right;
+    }
+    #InfoCard img:hover{
+        margin: 1%;
+        float: right;
+    }
+}
+/*---------------------------------------------------------------------------425px*/
+@media only screen and (max-width: 425px) {
+    div.fondo{
+        height: 100vh;
+        background-image: url(../src/img/fondoarrdec.png);
+        opacity: 0.8;
+    }
+    #SobreMi{
+        padding-top: 1%;
+        width: 100%;
+        margin-top: 4%;
+    }
+    #CardSobreMi{
+        border-radius: 20px;
+        background-color: rgba(236, 236, 236, 0.3);
+        box-shadow: 15px 8px 30px 0 rgba(135, 60, 31, 0.37);
+        backdrop-filter: blur(1px);
+        border: 2px solid rgba(236, 236, 236, 0.459);
+    }
+    #CardSobreMi:hover{
+        border-radius: 20px;
+        background-color: rgba(160, 206, 139, 0.3);
+        box-shadow: 15px 8px 30px 0 rgba(135, 60, 31, 0.37);
+        backdrop-filter: blur(50px);
+        border: 2px solid rgba(236, 236, 236, 0.459);
+    }
+    div.col-sm-8.col-ms-8.col-lg-8{
+        display: flex;
+        align-items: center;
+    }
+    div.card-body.text-end{
+        width: 100%;
+        margin-bottom: 3%;
+        margin-right: 0%;
+    }
+    h3.card-title{
+        font-family: 'Anybody-ExpandedMedium';
+        font-size:2rem;
+        display: inline;
+    }
+    h5.card-title{
+        font-family: 'Anybody-ExpandedBlack';
+        font-size: 1rem;
+        display: inline;
+    }
+    .card-text{
+        font-family: 'Anybody-ExtraExpandedMedium';
+        font-size: 0.6rem;
+        text-size-adjust: 5%;
+        margin-bottom: 0;
+    }
+    .card-text-qoute{
+        font-family: 'Anybody-ExtraExpandedThin';
+        float: right;
+        margin-top: 5%;
+        font-size: 0.4rem;
+    }
+    .codigoQR{
+        display: flex;
+        align-items: center;
+    }
+    .codigoQR img:hover{
+        filter: drop-shadow(5px 5px 5px black);
+        display: flex;
+        align-items: center;
+    }
+    div.col-sm-4.col-md-4.col-lg-4.codigoQR{
+        top: 8px;
+        position: absolute;
+        width: 30%;
+    }
+    /*--------------------------------*/
+    #InfoCard{
+        width: 100%;
+        border-radius: 20px;
+        background-color: rgba(252, 252, 252, 0.3);
+        box-shadow: 15px 8px 30px 0 rgba(135, 60, 31, 0.37);
+        backdrop-filter: blur(1px);
+        border: 2px solid rgba(236, 236, 236, 0.459);
+    }
+    #InfoCard:hover{
+        border-radius: 20px;
+        background-color: rgba(160, 206, 139, 0.3);
+        box-shadow: 15px 8px 30px 0 rgba(135, 60, 31, 0.37);
+        backdrop-filter: blur(50px);
+        border: 2px solid rgba(236, 236, 236, 0.459);
+    }
+    h6.card-title{
+        font-family: 'Anybody-ExpandedMedium';
+        font-size: 0.9rem;
+        display: inline;
+        float: right;
+    }
+    @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    
+    #InfoCard p.card-text{
+        font-family: 'Swis721BT-LightExtended';
+        font-size: 56%;
+        text-align: end;
+    
+        border-right: .1rem solid rgba(78, 143, 41, 0.671);
+    }
+    #InfoCard p.card-text.a{
+        animation: blink 0.5s steps(1) infinite, typing 2.5s steps(30) 1s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.b{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 3.5s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.c{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 5.5s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.d{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 8s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.e{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 10s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.f{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 12s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.g{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 14s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.h{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 16s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.i{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 18.5s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p.card-text.j{
+        animation: blink 0.5s steps(1) infinite, typing 2s steps(30) 20.5s 1 normal both, blink 1s steps(1) infinite;
+    }
+    #InfoCard p{
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    #InfoCard img{
+        width: 20px;
+        margin: 1%;
+        float: right;
+    }
+    #InfoCard img:hover{
+        margin: 1%;
+        float: right;
+    }
+}
+/*---------------------------------------------------------------------------375px*/
+@media only screen and (max-width: 375px){
+    div.col-sm-4.col-md-4.col-lg-4.codigoQR{
+        top: 8px;
+        position: absolute;
+        width: 35%;
+    }    
+}
+/*---------------------------------------------------------------------------320px*/
+@media only screen and (max-width: 320px){
+    div.col-sm-4.col-md-4.col-lg-4.codigoQR{
+        top: 8px;
+        position: absolute;
+        width: 40%;
+    }    
+}
+
 

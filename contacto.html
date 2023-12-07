@@ -8,17 +8,21 @@
     <title>Contacto | Portafolio BV</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contacto.css">
     <link rel="shortcut icon" href="./src/img/logoChicoB.png" type="imagen de reloj">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;900&family=Epilogue:ital,wght@0,100;0,200;0,300;0,700;1,100;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
-<body style="background-image: url(./src/img/orange_blur.png); background-position: center;">
+<body>
+<div class="fondo">
 <!--NAVBAR-->
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="./Index_dos.html">
+    <a class="navbar-brand" href="./index.html">
       <img src="./src/img/brz.png" alt="LogoBRZ" id="LogoBRZ">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,33 +42,30 @@
             inicio
           </a>
         </li>
-        <li class="nav-item text-end">
-          <a id="TextoNavBar" class="nav-link" href="#">sobre mi</a>
-        </li>
-        <li class="nav-item text-end">
-          <a id="TextoNavBar" class="nav-link" href="#">skills</a>
-        </li>
-        <li class="nav-item text-end">
-          <a id="TextoNavBar" class="nav-link" href="#">portafolio</a>
-        </li>
         <li class="nav-item text-end d-lg-none">
-          <a id="TextoNavBar" class="nav-link" href="#">contacto</a>
+          <a id="TextoNavBar" class="nav-link" href="./aboutme.html">sobre mi</a>
+        </li>
+        <li class="nav-item text-end">
+          <a id="TextoNavBar" class="nav-link" href="./portafolio.html">portafolio</a>
+        </li>
+        <li class="nav-item text-end">
+          <a id="TextoNavBar" class="nav-link" href="./contacto.html">contacto</a>
         </li>
           <!--links redes-->
         <div class="d-flex justify-content-evenly">
           <li class="item">
-            <a id="NavBarLink" class="nav-link d-lg-none" href="#">
-              <img id="logoFooter" src="./src/img/Logos/signo-de-github-blanco.png" alt="">
+            <a id="NavBarLink" class="nav-link d-lg-none" href="https://github.com/BerezVelez">
+              <img id="logoNav" src="./src/img/Logos/signo-de-github-blanco.png" alt="">
             </a>
           </li>
           <li class="item">
-            <a id="NavBarLink" class="nav-link d-lg-none" href="#">
-              <img id="logoFooter" src="./src/img/Logos/logotipo-de-linkedin-blanco.png" alt="">
+            <a id="NavBarLink" class="nav-link d-lg-none" href="https://www.linkedin.com/in/berenice-j-v%C3%A9lez-8289a6264/">
+              <img id="logoNav" src="./src/img/Logos/logotipo-de-linkedin-blanco.png" alt="">
             </a>
           </li>
           <li class="item">
-            <a id="NavBarLink" class="nav-link d-lg-none" href="#">
-              <img id="logoFooter" src="./src/img/Logos/behance-blanco.png" alt="">
+            <a id="NavBarLink" class="nav-link d-lg-none" href="https://www.behance.net/aidavlez/appreciated">
+              <img id="logoNav" src="./src/img/Logos/behance-blanco.png" alt="">
             </a>
           </li>
         </div>
@@ -73,83 +74,104 @@
   </div>
 </nav>
 <!--NAVBAR-->
+
 <!--CONTACTO-->
 <div class="container">
-    <div class="row align-items-start">
-      <div class="col-sm-12 col-lg-6" style="background-image: url(./src/img/Puntosss.png);">
-        
-        <form class="row g-3 field" id="form">
-            <div class="col-md-12">
-                <label for="from_name" class="form-label">nombre:</label>
-                <input type="text" class="form-control" name="from_name" id="from_name">
-            </div>
-            <div class="col-md-12">
-                <label for="email_id" class="form-label">e-mail:</label>
-                <input type="text" class="form-control" name="email_id" id="email_id" placeholder="tu_correo@dominio.com">
-            </div>
-            <div class="col-12 field">
-                <label for="message" class="form-label">mensaje:</label>
-                <textarea type="text" class="form-control" name="message" id="message" rows="3"></textarea>
-            </div>
-            <div class="col-lg-6" style="display:inline-flex;">
-                <img class="iconMail" src="./src/img/Logos/mail.png" alt="logoMail" width="18.5px" height="20px">
-                <h6 style="font-size:100%;">&ensp;ab.jvelez@gmail.com</h6>    
-            </div>
-            <div class="col-lg-6">
-                <button type="submit" id="btnEnviar" value="Send Email" class="btn btn-primary" style="float: right;">hola mundo</button>
-            </div>
-        </form>        
-
-      </div>
-      <div class="col-sm-12 col-lg-6">
+  <div class="row align-items-start">
+    
+    <div class="row col-sm-12 col-md-5 col-lg-4">
+      <div class="titulos">
         <h1>Contacto</h1>
-        <p><strong>¿Cómo puedo ayudarte?</strong></p>
-        <p>Recuerda especificarme tus ideas para <br> desarrollar tu página web.</p>
+        <p class="subtitulo"><strong>¿Cómo puedo ayudarte?</strong></p>
+        <p class="extra">Recuerda especificarme tus ideas para <br> desarrollar tu proyecto.</p>
       </div>
     </div>
+
+    <div class="col-sm-12 col-md-7 col-lg-8" id="formulario">
+      <form class="row g-3 field" id="form">
+          <div class="col-md-6">
+              <label for="from_name" class="form-label">nombre:</label>
+              <input type="text" class="form-control" name="from_name" id="from_name">
+          </div>
+          <div class="col-md-6">
+            <label for="from_asunto" class="form-label">asunto:</label>
+            <input type="text" class="form-control" name="from_asunto" id="from_asunto">
+          </div>
+          <div class="col-md-6">
+              <label for="from_email" class="form-label">e-mail:</label>
+              <input type="text" class="form-control" name="from_email" id="from_email" placeholder="tu_correo@dominio.com">
+          </div>
+          <div class="col-md-6">
+            <label for="from_telefono" class="form-label">teléfono:</label>
+            <input type="text" class="form-control" name="from_telefono" id="from_telefono" maxlength="10" placeholder="10 dígitos">
+          </div>  
+          <div class="col-12 field">
+              <label for="from_messag" class="form-label">mensaje:</label>
+              <textarea type="text" class="form-control" name="from_message" id="from_message" rows="2.5"></textarea>
+          </div>
+          <div class="col-lg-6" style="display:inline-flex;" id="miCorreo">
+              <h6 style="font-size:100%;"><i class="bi bi-envelope"></i>&ensp;ab.jvelez@gmail.com</h6>    
+          </div>
+          <div class="col-lg-6">
+              <button type="submit" id="btnEnviar" value="Send Email" class="btn btn-primary" style="float: right;">enviar&nbsp&nbsp&nbsp<i class="bi bi-arrow-up-right-square-fill"></i></button>
+          </div>
+      </form>        
+    </div>
+
+  </div>
+</div>
+<div class="skating">
+  <img src="./src/img/patinando.gif">
 </div>
 <!--CONTACTO-->
+
 <!--FOOTER-->
 <footer class="section_Final bottom">
     <!--<div class="footer-caja">-->
     <ul class="nav d-flex justify-content-evenly">
       <div class="nav d-flex justify-content-evenly">
         <li class="item">
-          <a id="TextoFooter" class="nav-link" href="#">PORTAFOLIO</a>
+          <a id="TextoFooter" class="nav-link" href="./aboutme.html">ABJV</a>
         </li>
         <li class="item">
-          <a id="TextoFooter" class="nav-link" href="#">ABJV</a>
+          <a id="TextoFooter" class="nav-link" href="./portafolio.html">PORTAFOLIO</a>
         </li>
       </div>
       <div class="nav d-flex justify-content-evenly">
         <li class="item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="https://github.com/BerezVelez">
             <img id="logoFooter" src="./src/img/Logos/signo-de-github.png" alt="">
           </a>
         </li>
         <li class="item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="https://www.linkedin.com/in/berenice-j-v%C3%A9lez-8289a6264/">
             <img id="logoFooter" src="./src/img/Logos/logotipo-de-linkedin.png" alt="">
           </a>
         </li>
         <li class="item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="https://www.behance.net/aidavlez/appreciated">
             <img id="logoFooter" src="./src/img/Logos/behance.png" alt="">
           </a>
         </li>
       </div>
       <div class="nav d-flex justify-content-evenly">
         <li class="item">
-          <a id="TextoFooter" class="nav-link" href="#">CONTACTO</a>
+          <a id="TextoFooter" class="nav-link" href="./contacto.html">CONTACTO</a>
         </li>
         <li class="item">
           <a id="TextoFooter" class="nav-link" href="./index.html">INICIO</a>
         </li>
+        </div>
       <!--</div>-->
     </ul>
-    </div>
-  </footer>
-  <!--FOOTER-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
-  </html>
+    
+</footer>
+<!--FOOTER-->
+
+</div><!--FondoIMG-->
+<script src="./js/contacto.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -160,7 +160,7 @@ a.navbar-brand{
 }
 #logoNav:focus{
     border-radius: 5px;
-    background-color: #D98556 ;
+    background-color: #D98556;
     width: 5vh;
     height: auto;
     opacity: 0.55;
@@ -321,7 +321,7 @@ CardsGlass*/
 .marque .maquee__content{
     display: flex;
     list-style: none;
-    animation: scrolling 10s linear infinite;
+    animation: scrolling 25s linear infinite;
 }
 .marque .maquee__content .maquee_item{
     flex-shrink: 0;
@@ -376,7 +376,7 @@ AboutMe*/
 }
 footer{
     margin-top: auto;
-    bottom: 0;
+    bottom: auto;
     width: 100%;
     padding-left: 20%;
     padding-right: 20%;    

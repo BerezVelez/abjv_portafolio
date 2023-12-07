@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width">
 
-    <title>Inicio | Portafolio BV</title>
+    <title>Contacto | Portafolio BV</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contacto.css">
     <link rel="shortcut icon" href="./src/img/logoChicoB.png" type="imagen de reloj">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;900&family=Epilogue:ital,wght@0,100;0,200;0,300;0,700;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;900&family=Epilogue:ital,wght@0,100;0,200;0,300;0,700;1,100;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
-<body style="background-color: rgb(223, 154, 89);">
+<body>
+<div class="fondo">
 <!--NAVBAR-->
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="./Index_dos.html">
+    <a class="navbar-brand" href="./index.html">
       <img src="./src/img/brz.png" alt="LogoBRZ" id="LogoBRZ">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,36 +39,33 @@
         </li>
         <li class="nav-item text-end">
           <a id="TextoNavBar" class="nav-link active d-lg-none" aria-current="page" href="#">
-            Inicio
+            inicio
           </a>
         </li>
-        <li class="nav-item text-end">
-          <a id="TextoNavBar" class="nav-link" href="#">sobre mi</a>
-        </li>
         <li class="nav-item text-end d-lg-none">
-          <a id="TextoNavBar" class="nav-link" href="#">skills</a>
+          <a id="TextoNavBar" class="nav-link" href="./aboutme.html">sobre mi</a>
         </li>
         <li class="nav-item text-end">
-          <a id="TextoNavBar" class="nav-link" href="#">portafolio</a>
+          <a id="TextoNavBar" class="nav-link" href="./portafolio.html">portafolio</a>
         </li>
         <li class="nav-item text-end">
-          <a id="TextoNavBar" class="nav-link" href="#">contacto</a>
+          <a id="TextoNavBar" class="nav-link" href="./contacto.html">contacto</a>
         </li>
           <!--links redes-->
         <div class="d-flex justify-content-evenly">
           <li class="item">
-            <a id="NavBarLink" class="nav-link d-lg-none" href="#">
-              <img id="logoFooter" src="./src/img/Logos/signo-de-github-blanco.png" alt="">
+            <a id="NavBarLink" class="nav-link d-lg-none" href="https://github.com/BerezVelez">
+              <img id="logoNav" src="./src/img/Logos/signo-de-github-blanco.png" alt="">
             </a>
           </li>
           <li class="item">
-            <a id="NavBarLink" class="nav-link d-lg-none" href="#">
-              <img id="logoFooter" src="./src/img/Logos/logotipo-de-linkedin-blanco.png" alt="">
+            <a id="NavBarLink" class="nav-link d-lg-none" href="https://www.linkedin.com/in/berenice-j-v%C3%A9lez-8289a6264/">
+              <img id="logoNav" src="./src/img/Logos/logotipo-de-linkedin-blanco.png" alt="">
             </a>
           </li>
           <li class="item">
-            <a id="NavBarLink" class="nav-link d-lg-none" href="#">
-              <img id="logoFooter" src="./src/img/Logos/behance-blanco.png" alt="">
+            <a id="NavBarLink" class="nav-link d-lg-none" href="https://www.behance.net/aidavlez/appreciated">
+              <img id="logoNav" src="./src/img/Logos/behance-blanco.png" alt="">
             </a>
           </li>
         </div>
@@ -75,111 +75,53 @@
 </nav>
 <!--NAVBAR-->
 
-<div class="container">
-  <div class="row align-items-center">
-  
-    <div class="col-sm-8 col-md-6 col-lg-4">  
-      <div class="row cardGlass">
-      <div class="row cardTextos">
-        
-        <div class="col-sm-12 fecha">
-          <h6> [2032] </h6>
-        </div>
-  
-        <div class="col-sm-9 InfoGeneral">
-            <div class="col-8 col-sm-6 titulos">
-              <div class="titulo">
-                <h5 class="card-title">BEREZ</h5>
-                <h5 class="card-title2">VÉLEZ</h5>
-              </div>
-  
-            </div><!--titulos-->
-        </div><!--InfoGeneral-->
-        <div class="col-sm-3 asterisco">
-          <img src="./src/img/astNaranja.png" alt="Icono de Asterisco, decoración" style="width: 50px;">
-        </div>
-      </div><!--cardTextos-->
-      </div><!--cardGlass-->
-  
-      <div class="container text-center verde">
-        <div class="row align-items-start" >
-          <div class="col-8 btnContacto">
-            <a href="./contacto.html">
-            contáctame :)
-            </a>
-          </div>
-        </div><!--btnContacto-->
-      </div><!--Contacto-->
-    </div><!--rowUno-->
-  
-    <div class="col-sm-8 col-md-6 col-lg-8" id="scroll">
-      <ul class="scroll_content" >
-        <li class="scroll-item">Desarrollo web</li>
-        <li class="scroll-item">Diseño</li>
-        <li class="scroll-item">Arquitectura</li>
-        <li class="scroll-item">Games</li>
-  
-        <li class="scroll-item">Desarrollo web</li>
-        <li class="scroll-item">Diseño</li>
-        <li class="scroll-item">Arquitectura</li>
-        <li class="scroll-item">Games</li>
-  
-        <li class="scroll-item">Desarrollo web</li>
-        <li class="scroll-item">Diseño</li>
-        <li class="scroll-item">Arquitectura</li>
-        <li class="scroll-item">Games</li>
-  
-        <li class="scroll-item">Desarrollo web</li>
-        <li class="scroll-item">Diseño</li>
-        <li class="scroll-item">Arquitectura</li>
-        <li class="scroll-item">Games</li>
-      </ul>
-    </div><!--scroll-->
-  
-  </div><!--row-->
-  </div><!--container-->
-
 <!--FOOTER-->
 <footer class="section_Final bottom">
     <!--<div class="footer-caja">-->
     <ul class="nav d-flex justify-content-evenly">
       <div class="nav d-flex justify-content-evenly">
         <li class="item">
-          <a id="TextoFooter" class="nav-link"  style="padding-top: 3%;" href="#">PORTAFOLIO</a>
+          <a id="TextoFooter" class="nav-link" href="./aboutme.html">ABJV</a>
         </li>
         <li class="item">
-          <a id="TextoFooter" class="nav-link" style="padding-top: 5%;" href="#">ABJV</a>
+          <a id="TextoFooter" class="nav-link" href="./portafolio.html">PORTAFOLIO</a>
         </li>
       </div>
       <div class="nav d-flex justify-content-evenly">
         <li class="item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="https://github.com/BerezVelez">
             <img id="logoFooter" src="./src/img/Logos/signo-de-github.png" alt="">
           </a>
         </li>
         <li class="item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="https://www.linkedin.com/in/berenice-j-v%C3%A9lez-8289a6264/">
             <img id="logoFooter" src="./src/img/Logos/logotipo-de-linkedin.png" alt="">
           </a>
         </li>
         <li class="item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="https://www.behance.net/aidavlez/appreciated">
             <img id="logoFooter" src="./src/img/Logos/behance.png" alt="">
           </a>
         </li>
       </div>
       <div class="nav d-flex justify-content-evenly">
         <li class="item">
-          <a id="TextoFooter" class="nav-link" style="padding-top: 4%;" href="./contacto.html">CONTACTO</a>
+          <a id="TextoFooter" class="nav-link" href="./contacto.html">CONTACTO</a>
         </li>
         <li class="item">
-          <a id="TextoFooter" class="nav-link" style="padding-top: 5%;" href="./index.html">INICIO</a>
+          <a id="TextoFooter" class="nav-link" href="./index.html">INICIO</a>
         </li>
+        </div>
       <!--</div>-->
     </ul>
-    </div>
-  </footer>
-  <!--FOOTER-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
-  </html>
+    
+</footer>
+<!--FOOTER-->
+
+</div><!--FondoIMG-->
+<script src="./js/contacto.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
