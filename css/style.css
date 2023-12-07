@@ -24,6 +24,7 @@ body{
 div.fondo{
     height: 100vh;
     background-image: url(../src/img/fondoarrdec.png);
+    background-repeat: repeat;
     opacity: 0.8;
 }
 @font-face {
